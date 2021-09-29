@@ -12,7 +12,7 @@ import os
 
 str = 'b\nEND'
 str = str.encode()
-init('-ex1 -ex2 -multithreading:total_threads 0')
+init('-ex1 -ex2')
 scorefxn = pyrosetta.create_score_function('ref2015')
 fastrelax = FastRelax()
 fastrelax.set_scorefxn(scorefxn)
